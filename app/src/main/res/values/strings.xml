@@ -8,4 +8,6 @@
     <string name="hello_home_fragment">Hello home fragment</string>
     <string name="hello_dashboard_fragment">Hello dashboard fragment</string>
     <string name="hello_notifications_fragment">Hello notifications fragment</string>
+    <string name="hello_notification_details_fragment">Hello notification details fragment</string>
+    <string name="go_to_details">Go to Details</string>
 </resources>
