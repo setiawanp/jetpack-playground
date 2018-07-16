@@ -35,7 +35,9 @@ class NotificationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         button_go.setOnClickListener {
-            findNavController().navigate(R.id.action_open_notification_details)
+            val args = NotificationDetailsFragmentArgs.Builder(100)
+            args.type = "my-type"
+            findNavController().navigate(R.id.action_open_notification_details, args.build().toBundle())
         }
     }
 }

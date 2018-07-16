@@ -33,5 +33,14 @@
         android:id="@+id/navigation_notification_details"
         android:name="com.setiawanpaiman.jetpack.NotificationDetailsFragment"
         android:label="fragment_notification_details"
-        tools:layout="@layout/fragment_notification_details" />
+        tools:layout="@layout/fragment_notification_details">
+        <argument
+            android:name="id"
+            app:type="integer" />
+        <argument
+            android:name="type"
+            android:defaultValue="default-type"
+            app:nullable="true"
+            app:type="string" />
+    </fragment>
 </navigation>
